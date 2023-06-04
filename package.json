@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "copy": "mv ./.next/static ./.next/standalone/; cp -r ./public ./.next/standalone/",
+    "cleanup": "rm -r node_modules"
   },
   "dependencies": {
     "@next/font": "13.1.6",
